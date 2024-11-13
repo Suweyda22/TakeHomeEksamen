@@ -1,0 +1,45 @@
+\section{Opgave 3}
+\\
+Lad \(R, S\) og \(T\) være binære relationer på mængden \(\{1, 2, 3, 4\}\) \\
+\\
+\textbf{a) Lad R = \{(1, 1), (2, 1), (2, 2), (2, 4), (3, 1), (3, 3), (4, 1), (4, 4)\}.\\
+Er R en partiel ordning?}\\
+En relation er en partial ordning når den er refleksiv, antisymmetrisk og transitiv. \\
+- Refleksivitet: alle elementer peger på sig selv. \\
+- Antisymmetri: Hvis vi har \(a, b\) i relationen, må vi ikke have \(b, a\) - medmindre \(a = b\)\\
+- Transitivitet: Hvis vi har \(a, b\) og \(b, c\) i relationen skal vi også have \(a, c\) \\
+\\
+Ud fra denne information kan vi nu afgøre om R er en partial ordning\\
+\\
+Refleksivitet: \((1, 1), (2, 2), (3, 3), (4, 4)\) er alle med i \(R\), hvilket gør den refleksiv\\
+Antisymmetri: Selvom \((1, 1), (2, 2), (3, 3), (4, 4)\) er med, er \(R\) stadig antisymmetrisk, da vi i disse tilfælde har \(a = b\) \\
+Transitivitet: \\
+- Vi har \((2, 1)\) og \((1, 1)\) så vi burde have \((2, 1)\) som allerede er i \(R\). \\
+- Vi har \((2, 4)\) og \((4, 1)\) så vi burde have \((2, 1)\) som allerede er i \(R\). \\
+- Vi har \((3, 1)\) og \((1, 1)\) så vi burde have \((3,1)\) som allerede er i \(R\). \\
+- Vi har \((3, 3)\) og \((3,1)\) så vi burde have \((3,1)\) som allerede er i \(R\). \\
+- Vi har \((4, 1)\) og \((1, 1)\) så vi burde have \((4, 1)\) som allerede er i \(R\). \\
+Parene der peger på sig selv opfylder selvfølgelig også alle transitiviteten.
+\begin{center}
+\(R\) opfylder alle krav og er derfor \textbf{en partial ordning}
+\end{center}
+\\
+\textbf{b) Lad S = \{(1,2), (2, 3), (2, 4), (4, 2)\}.\\
+Angiv den transitive lukning af S.}\\
+\\
+Vi har allerede defineret hvad transitivitet er. For at finde den transitive lukning af S skal vi kigge gennem de forskellige par, og kontrollere om de opfylder transitivitet. Hvis de ikke gør, skal vi tilføje det par, som gør dem transitive.
+\\
+- Vi har \((1, 2)\) og \((2, 3)\) så vi burde have \((1, 3)\).
+- Vi har \((1, 2)\) og \((2, 4)\) så vi burde have \((1, 4)\).
+- Vi har \((4, 2)\) og \((2, 3)\) så vi burde have \((4, 3)\).
+- Vi har \((4, 2)\) og \((2, 4)\) så vi burde have \((4, 4)\).
+\\
+Hvis vi så sætter det hele sammen får vi den transitive lukning af S som: \\
+\begin{center}
+\(= \{(1, 2), (2, 3), (2, 4), (4, 2), (1, 3), (1, 4), (4, 3), (4, 4)\}\)
+\end{center}
+\\
+\textbf{c) Lad \(T = \{(1, 2), (1, 3), (2, 2), (2, 4), (3, 1), (3, 3), (4, 2), (4, 4)\}\)\\
+Bemærk, at T er en kvivalens-relation.\\
+Angiv T's ækvivalens-klasser.\\}
+\\

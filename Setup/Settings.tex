@@ -1,0 +1,79 @@
+\geometry{a4paper,top=30mm,bottom=30mm,right=35mm,left=25mm}
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
+%\setlength\parindent{24pt}
+\renewcommand{\baselinestretch}{1.5}
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\contentsname}{Indholdsfortegnelse}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,     
+    urlcolor=cyan,
+    citecolor=blue,
+}
+\renewcommand{\figurename}{Figur}
+\renewcommand{\tablename}{Tabel}
+\usepackage[format=plain,
+            labelfont={bf,it},
+            textfont=it]{caption}
+
+           
+\addbibresource{Bibliography.bib}
+% Removing the bibliography heading
+\defbibheading{myheading}[]{}
+%Path relative to the main .tex file
+\graphicspath{ {./Figures/} }
+
+% Table of contents (TOC) and numbering of headings
+\setcounter{tocdepth}{2}   
+\setcounter{secnumdepth}{4}
+
+\setcounter{biburllcpenalty}{9000}
+
+ 
+%flowchart
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm, text width=3cm, text centered, draw=black, fill=red!30]
+\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=3cm, minimum height=1cm, text width=3cm, text centered, draw=black, fill=blue!30]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text width=3cm, text centered, draw=black, fill=orange!30]
+\tikzstyle{decision} = [diamond, aspect = 2, minimum width=3cm, minimum height=1cm, text width=3cm, text centered, draw=black, fill=green!30]
+
+\tikzstyle{interupt} = [draw,rectangle split, rectangle split horizontal,rectangle split parts=3,minimum height=1cm,minimum width=3cm,draw=black,fill=yellow!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    basicstyle=\ttfamily,
+    numbers=left,
+    numberstyle=\tiny,
+    numbersep=5pt,
+    breaklines=true,
+    captionpos=b,
+    frame=single,
+    lineskip=1.0ex, % reduced line spacing to 1.0
+    language=Java, % or the language you are using 
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    otherkeywords={>,<,.,;,-,!,=,~},
+    morekeywords={>,<,.,;,-,!,=,~}
+}
+
+
+\lstdefinestyle{Dockerfilestyle}{
+    basicstyle=\ttfamily,
+    numbers=left,
+    numberstyle=\tiny,
+    numbersep=5pt,
+    breaklines=true,
+    captionpos=b,
+    frame=single,
+    lineskip=1.0ex, % reduced line spacing to 1.0
+}
