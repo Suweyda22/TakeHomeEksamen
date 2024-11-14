@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{Eksamen januar 2009 opgave 3.}
+\author{Amal Hassan}
+\date{November 2024}
+\usepackage{amsmath} 
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+I denne opgave er det primære mål at dokumentere, at man kan bruge Latex
+og Git. Opgaven skal løses i ens studiegruppe, og man skal bruge Git til at
+udvikle en Latex-fil sammen i gruppen. Opgaven evalueres med bestået/ikke
+bestået. Kravet for beståelse er:
+1. Afleveringen er lavet i Latex.
+2. Der er brugt Git under udviklingen, alle personer bag afleveringen har
+lavet mindst et Git-commit hver, og det samlede antal linier committed
+fra hver person er nogenlunde jævnt fordelt.
+3. Afleveringen indeholder (seriøse forsøg på) løsninger til det krævede
+antal opgaver (se nedenfor).  
+
+\section{Opgave 3} 
+Lad S = \{1, 2, \ldots, 15\}. 
+
+Betragt følgende binære relation på \( S \):
+\[
+R = \{(a, b) \mid b = 2a\}
+\]
+
+\begin{enumerate}
+    \item[a)] Hvilke af nedenstående par tilhører \( R \)? Hvilke tilhører \( R^2 \)?
+    \[
+    (1, 1), \, (2, 4), \, (4, 2), \, (3, 5), \, (2, 8)
+    \]
+
+    \item[b)] Opskriv alle par i den transitive lukning af \( R \).
+\end{enumerate}
+
+Betragt relationen \( R = \{(a, b) \mid b = 2a\} \) på \( S = \{1, 2, 3, 4, 5, 6\} \).
+
+\textbf{Matrixrepræsentation af \( R \):}
+
+Vi undersøger alle mulige par \((a, b)\), hvor \( a, b \in S \), og sætter \( R_{ij} = 1 \), hvis \( b = 2a \), ellers \( R_{ij} = 0 \).
+
+
+
+\[ 
+R =
+\begin{bmatrix}
+0 & 1 & 0 & 0 & 0 & 0 \\ 
+0 & 0 & 1 & 0 & 0 & 0 \\ 
+0 & 0 & 0 & 1 & 0 & 0 \\ 
+0 & 0 & 0 & 0 & 1 & 0 \\ 
+0 & 0 & 0 & 0 & 0 & 1 \\ 
+0 & 0 & 0 & 0 & 0 & 0
+\end{bmatrix}
+\]
+
+\textbf{Forklaring:}
+\begin{itemize}
+    \item \((1, 2)\): \( b = 2 \cdot 1 \), så \( R_{1,2} = 1 \).
+    \item \((2, 4)\): \( b = 2 \cdot 2 \), så \( R_{2,3} = 1 \).
+    \item \((3, 6)\): \( b = 2 \cdot 3 \), så \( R_{3,4} = 1 \).
+    \item \((4, 8)\), \((5, 10)\), \((6, 12)\): Ikke i \( S \), så deres indgange er 0.
+\end{itemize}
+
+\end{document}
+
+\end{document}
